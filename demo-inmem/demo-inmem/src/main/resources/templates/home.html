@@ -1,0 +1,15 @@
+<!DOCTYPE html>
+<html lang="en" xmlns:th="http://www.thymeleaf.org" 
+xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+<head>
+      <meta charset="UTF-8">
+      <meta name="viewport" content="width=device-width, initial-scale=1.0">
+      <title>Document</title>
+</head>
+<body>
+     <h1> Welcome to a Blank HTML Page.... </h1>
+     
+     <h2> <span sec:authentication="principal.username"></span></h2>
+     <h2> <span sec:authentication="principal.authorities"></span></h2>
+</body>
+</html>
